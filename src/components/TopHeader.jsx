@@ -9,7 +9,7 @@ import { MdPhone, MdEmail } from "react-icons/md";
 
 function TopHeader() {
   return (
-    <div className="bg-gray-900 text-white text-md">
+    <div className="bg-gray-900 text-white text-md hidden md:inline-block md:w-full">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
         {/* Sosyal Medya */}
         <div className="flex items-center space-x-3">
@@ -66,7 +66,7 @@ function TopHeader() {
           </div>
         </div>
         {/* giriş */}
-        <div className="bg-[#fab301] p-1 border rounded-md text-center  font-semibold hover:text-black transition duration-300">
+        <div className="bg-[#fab301] py-1 px-4 rounded-md text-center hover:bg-white  font-semibold hover:text-[#fab301] transition duration-300">
           <a
             href="http://nousobs.com/"
             target="_blank"

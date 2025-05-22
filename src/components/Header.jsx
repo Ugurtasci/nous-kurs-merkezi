@@ -1,204 +1,130 @@
-import React, { useEffect, useRef, useState } from "react";
-
+import { useState } from 'react';
+import { FaHome, FaBars, FaTimes } from 'react-icons/fa';
+import { IoIosArrowDown } from 'react-icons/io';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from "../assets/logo.png";
-import { Link, NavLink } from "react-router-dom";
-import { FaHome, FaTimes } from "react-icons/fa";
-import { FaBarsStaggered } from "react-icons/fa6";
-import { IoIosArrowDown } from "react-icons/io";
 
-const Header = () => {
+const menuItems = [
+  { label: "Ana Sayfa", path: "/", icon: <FaHome />, external: false },
+  {
+    label: "Kurumsal",
+    submenu: [
+      { label: "Hakkımızda", path: "/hakkimizda", external: false },
+    ]
+  },
+  { label: "Hizmetlerimiz", path: "/hizmetlerimiz", external: false },
+  { label: "Personellerimiz", path: "/hekimlerimiz", external: false },
+  { label: "Duyurular", path: "/duyurular", external: false },
+  {
+    label: "Araçlar",
+    submenu: [
+      { label: "Nöbetçi Eczaneler", path: "https://bingolism.saglik.gov.tr/TR-244131/nobetci-eczane.html", external: true },
+      { label: "E Nabız Labaratuar Sonuçları", path: "https://enabiz.gov.tr/", external: true },
+      { label: "Mamografi Sonuçları", path: "https://mmtarama.saglik.gov.tr/randevu/mamografi-sonuc-sorgula", external: true },
+    ]
+  },
+  { label: "İletişim", path: "/iletisim", external: false },
+];
+
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  //const location = useLocation();
+  const location = useLocation();
 
-  const menuRef = useRef(null);
-  const [activeMenu, setActiveMenu] = useState(null);
-
-  // Boşluğa tıklanınca menüyü kapat
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setActiveMenu(null);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="shadow-md w-full lg:px-20 px-5 bg-[#fab301]">
-      <div className="flex items-center justify-between w-full  py-4 ">
-        {/* Sol Logo ve Başlık */}
-        <div className="flex items-center">
-          <Link to="/">
-            <img
-              src={logo}
-              alt="Logo"
-              className="h-14 w-auto object-cover ml-8 cursor-pointer"
-            />
-          </Link>
-          {/*  <div>
-            <p className="text-lg font-bold">NOUS KURS MERKEZİ</p>
-          </div> */}
+    <header className="bg-[#fab303] shadow-md w-full lg:px-20 px-5">
+      <div className="py-4 flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <img src={logo} alt="Logo" className="h-12 w-auto" />
         </div>
 
-        {/* Menü - Masaüstü */}
-        <nav className="items-center hidden md:flex lg:space-x-4 space-x-2 lg:text-xl text-lg font-medium text-gray-800">
-          <Link to={"/"}>
-            <FaHome
-              className={`cursor-pointer hover:text-white ${
-                location.pathname === "/"
-              } text-3xl `}
-            />
-          </Link>
-
-          {/* Kurumsal Menü */}
-          <div className="relative group" ref={menuRef}>
-            <button
-              onClick={() =>
-                setActiveMenu(activeMenu === "kurumsal" ? null : "kurumsal")
-              }
-              className={`flex items-center gap-1  px-2 py-1 rounded   hover:bg-white h-14 w-auto ${
-                location.pathname === "/kurumsal"
-              }`}
-            >
-              Kurumsal <IoIosArrowDown />
-            </button>
-            {activeMenu === "kurumsal" && (
-              <div className="absolute left-0 top-full bg-gray-100 shadow-lg w-36 z-10">
-                <NavLink
-                  to="/hakkimizda"
-                  className="block px-1 py-2 hover:bg-[#fab301] hover:text-white hover:border hover:border-black "
-                  onClick={() => setActiveMenu(null)}
-                >
-                  Hakkımızda
-                </NavLink>
-
-                <NavLink
-                  to="/misyonvevizyon"
-                  className="block px-1 py-2  hover:bg-[#fab301] hover:text-white hover:border hover:border-black"
-                  onClick={() => setActiveMenu(null)}
-                >
-                  Misyon ve Vizyon
-                </NavLink>
+        <nav className="hidden md:flex space-x-6 items-center font-medium text-gray-800">
+          {menuItems.map((item, index) =>
+            item.submenu ? (
+              <div key={index} className="relative group">
+                <button className={`flex items-center text-white gap-1 relative after:content-[""] after:absolute 
+                  after:-bottom-1 after:left-0 after:bg-white after:h-1 after:rounded-2xl 
+              after:w-0 after:transition-all after:duration-500 hover:after:w-full  ${item.submenu.some(i => isActive(i.path)) ? "after:w-full" : ""}`}>
+                  {item.label} <IoIosArrowDown />
+                </button>
+                <div className="absolute left-0 top-full hidden group-hover:block bg-white border-t border-teal-600 shadow-lg w-48 z-10">
+                  {item.submenu.map((sub, i) =>
+                    sub.external ? (
+                      <a key={i} href={sub.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-100">
+                        {sub.label}
+                      </a>
+                    ) : (
+                      <NavLink key={i} to={sub.path} className="block px-4 py-2  hover:bg-gray-100">
+                        {sub.label}
+                      </NavLink>
+                    )
+                  )}
+                </div>
               </div>
-            )}
-          </div>
-
-          <NavLink
-            to={"/hizmetlerimiz"}
-            className={`flex items-center rounded hover:bg-white h-14 w-auto  ${
-              location.pathname === "/hizmetlerimiz"
-            }`}
-          >
-            Hizmetlerimiz
-          </NavLink>
-
-          <NavLink
-            to={"/kadromuz"}
-            className={`flex items-center rounded hover:bg-white h-14 w-auto  ${
-              location.pathname === "/kadromuz"
-            }`}
-          >
-            Kadromuz
-          </NavLink>
-          <NavLink
-            to={"/duyurular"}
-            className={`flex items-center rounded hover:bg-white h-14 w-auto  ${
-              location.pathname === "/duyurular"
-            }`}
-          >
-            Duyurular
-          </NavLink>
-          <NavLink
-            to={"/iletişim"}
-            className={`flex items-center rounded hover:bg-white h-14 w-auto  ${
-              location.pathname === "/iletişim"
-            }`}
-          >
-            İletişim
-          </NavLink>
+            ) : (
+              <NavLink
+                key={index}
+                to={item.path}
+                className={`flex items-center text-white gap-1 relative after:content-[""] after:absolute 
+                  after:-bottom-1 after:left-0 after:bg-white after:h-1 after:rounded-2xl 
+              after:w-0 after:transition-all after:duration-500 hover:after:w-full  ${isActive(item.path) ? "after:w-full" : ""}`}
+              >
+                {item.icon && item.icon} {item.label}
+              </NavLink>
+            )
+          )}
         </nav>
-        {/* Hamburger Menü */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-8 cursor-pointer"
-        >
-          {isOpen ? <FaTimes size={22} /> : <FaBarsStaggered size={22} />}
+
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
+          {isOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
         </button>
-
-        {/* Mobil Menü */}
-        {isOpen && (
-          <div className="md:hidden absolute  top-36 left-0 w-full z-50 bg-[#fab301] shadow-xl px-4 pb-4 space-y-2 text-xl font-medium text-gray-900">
-           
-
-            <Link
-              onClick={() => setIsOpen(false)}
-              to={"/"}
-              className="flex items-center gap-1 py-1 rounded hover:text-white w-full"
-            >
-              <FaHome />
-              Ana Sayfa
-            </Link>
-
-            {/* Kurumsal */}
-            <details className="group border-b border-slate-200">
-              <summary className="cursor-pointer flex items-center gap-1 py-2 rounded hover:text-white w-full">
-                <span>Kurumsal</span>
-                <IoIosArrowDown className="group-open:rotate-180 transition-transform duration-200" />
-              </summary>
-              <div className="pl-4 mt-2 space-y-1 text-lg rounded bg-gray-100">
-                <Link
-                  onClick={() => setIsOpen(false)}
-                  to="/hakkimizda"
-                  className="block py-1 rounded  hover:bg-[#fab301] hover:text-white hover:border hover:border-black w-full"
-                >
-                  Hakkımızda
-                </Link>
-                <Link
-                  onClick={() => setIsOpen(false)}
-                  to="/misyonvevizyon"
-                  className="block py-1 rounded hover:bg-[#fab301] hover:text-white hover:border hover:border-black w-full"
-                >
-                  Misyon ve Vizyon
-                </Link>
-              </div>
-            </details>
-
-           <NavLink
-              onClick={() => setIsOpen(false)}
-              to="/havalandırmasistemleri"
-              className="block py-1 rounded hover:text-white "
-            >
-              Hizmetlerimiz
-            </NavLink>
-
-            {/* Diğer Menüler */}
-            <NavLink
-              onClick={() => setIsOpen(false)}
-              to="/havalandırmasistemleri"
-              className="block py-1 rounded hover:text-white "
-            >
-              Kadromuz
-            </NavLink>
-            <NavLink
-              onClick={() => setIsOpen(false)}
-              to="/klimasistemleri"
-              className="block py-1 rounded hover:text-white"
-            >
-              Duyurular
-            </NavLink>
-            <NavLink
-              onClick={() => setIsOpen(false)}
-              to="/iletisim"
-              className="block py-1 rounded hover:text-white"
-            >
-              İletişim
-            </NavLink>
-          </div>
-        )}
       </div>
+
+      {/* Mobil Menü */}
+      {isOpen && (
+        <div className="md:hidden absolute z-10 bg-white left-0 w-full shadow-lg px-4 pb-4 space-y-2 text-sm font-medium text-gray-700">
+          {menuItems.map((item, index) =>
+            item.submenu ? (
+              <details key={index} className="group border-b border-slate-300">
+                <summary className="cursor-pointer flex items-center gap-1">
+                  <span>{item.label}</span>
+                  <IoIosArrowDown className="group-open:rotate-180 transition-transform duration-200" />
+                </summary>
+                <div className="pl-4 mt-2 space-y-1">
+                  {item.submenu.map((sub, i) =>
+                    sub.external ? (
+                      <a
+                        key={i}
+                        href={sub.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setIsOpen(false)}
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        {sub.label}
+                      </a>
+                    ) : (
+                      <Link key={i} to={sub.path} onClick={() => setIsOpen(false)} className="block">
+                        {sub.label}
+                      </Link>
+                    )
+                  )}
+                </div>
+              </details>
+            ) : (
+              <Link
+                key={index}
+                to={item.path}
+                onClick={() => setIsOpen(false)}
+                className={`flex items-center gap-2 ${isActive(item.path) ? "text-teal-600" : ""}`}
+              >
+                {item.icon && item.icon} {item.label}
+              </Link>
+            )
+          )}
+        </div>
+      )}
     </header>
   );
-};
-
-export default Header;
+}
