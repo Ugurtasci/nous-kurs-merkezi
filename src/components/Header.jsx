@@ -9,21 +9,18 @@ const menuItems = [
   {
     label: "Kurumsal",
     submenu: [
-      { label: "Hakkımızda", path: "/hakkimizda", external: false },
+      { label: "Hakkımızda", path: "/hakkimizda" },
+      { label: "Misyon ve Vizyonumuz", path: "/misyon-vizyon" },
+      { label: "Tarihçe", path: "/tarihce" },
     ]
   },
-  { label: "Hizmetlerimiz", path: "/hizmetlerimiz", external: false },
-  { label: "Personellerimiz", path: "/hekimlerimiz", external: false },
-  { label: "Duyurular", path: "/duyurular", external: false },
-  {
-    label: "Araçlar",
-    submenu: [
-      { label: "Nöbetçi Eczaneler", path: "https://bingolism.saglik.gov.tr/TR-244131/nobetci-eczane.html", external: true },
-      { label: "E Nabız Labaratuar Sonuçları", path: "https://enabiz.gov.tr/", external: true },
-      { label: "Mamografi Sonuçları", path: "https://mmtarama.saglik.gov.tr/randevu/mamografi-sonuc-sorgula", external: true },
-    ]
-  },
-  { label: "İletişim", path: "/iletisim", external: false },
+  { label: "Kurslarımız", path: "/kurslar" },
+  { label: "Kadromuz", path: "/kadro" },
+  { label: "Duyurular", path: "/duyurular" },
+  { label: "Etkinliklerimiz", path: "/etkinlikler" },
+  { label: "Blog", path: "/blog" },
+  { label: "Galeri", path: "/galeri" },
+  { label: "İletişim", path: "/iletisim" },
 ];
 
 export default function Header() {
@@ -50,15 +47,9 @@ export default function Header() {
                 </button>
                 <div className="absolute left-0 top-full hidden group-hover:block bg-white border-t border-teal-600 shadow-lg w-48 z-10">
                   {item.submenu.map((sub, i) =>
-                    sub.external ? (
-                      <a key={i} href={sub.path} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-100">
-                        {sub.label}
-                      </a>
-                    ) : (
-                      <NavLink key={i} to={sub.path} className="block px-4 py-2  hover:bg-gray-100">
-                        {sub.label}
-                      </NavLink>
-                    )
+                    <NavLink key={i} to={sub.path} className="block px-4 py-2  hover:bg-gray-100">
+                    {sub.label}
+                    </NavLink>
                   )}
                 </div>
               </div>
@@ -83,7 +74,7 @@ export default function Header() {
 
       {/* Mobil Menü */}
       {isOpen && (
-        <div className="md:hidden absolute z-10 bg-white left-0 w-full shadow-lg px-4 pb-4 space-y-2 text-sm font-medium text-gray-700">
+        <div className="md:hidden absolute z-10 bg-[#fab303] left-0 w-full shadow-lg px-4 pb-4 space-y-2 text-sm font-medium text-white border-t">
           {menuItems.map((item, index) =>
             item.submenu ? (
               <details key={index} className="group border-b border-slate-300">
@@ -117,7 +108,7 @@ export default function Header() {
                 key={index}
                 to={item.path}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-2 ${isActive(item.path) ? "text-teal-600" : ""}`}
+                className={`flex items-center gap-2 ${isActive(item.path) ? "text-black" : ""}`}
               >
                 {item.icon && item.icon} {item.label}
               </Link>
