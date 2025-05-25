@@ -4,7 +4,7 @@ import logo from "../assets/logo.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-[#fcad32] py-8 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-white border-t text-[#fcad32] py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
         {/* Section 1: Logo and Contact Info */}

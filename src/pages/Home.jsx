@@ -6,6 +6,7 @@ import bgGecis from "../assets/bgGecis.png"
 import CountdownTimer from "../components/CountdownTimer";
 import Courses from "../components/Courses";
 import Footer from "../components/Footer";
+import EducationSystem from "../components/EducationSystem";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
      <CountdownTimer targetDate={yksDate} />
      <img src={bgGecis} alt="" className="w-full" />
      <Courses/>
+     <EducationSystem/>
      <Footer/>
     
     </main>
