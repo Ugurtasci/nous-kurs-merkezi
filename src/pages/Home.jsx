@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import EducationSystem from "../components/EducationSystem";
 import Articles from "../components/Articles";
 import Comments from "../components/Comments";
+import BottomFooter from "../components/BottomFooter";
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
      <Articles/>
      <Comments/>
      <Footer/>
+     <BottomFooter/>
     
     </main>
   );
