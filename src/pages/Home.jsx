@@ -7,12 +7,13 @@ import CountdownTimer from "../components/CountdownTimer";
 import Courses from "../components/Courses";
 import Footer from "../components/Footer";
 import EducationSystem from "../components/EducationSystem";
+import Articles from "../components/Articles";
 
 
 const Home = () => {
   const yksDate = '2025-06-22T10:00:00';
   return (
-    <main>
+    <main className="w-full ">
       <Slider />
      <Features/>
      <section className="md:m-20" >
@@ -23,6 +24,7 @@ const Home = () => {
      <img src={bgGecis} alt="" className="w-full" />
      <Courses/>
      <EducationSystem/>
+     <Articles/>
      <Footer/>
     
     </main>

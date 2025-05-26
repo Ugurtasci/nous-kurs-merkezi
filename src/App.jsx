@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import TopHeader from "./components/TopHeader";
 import Header from "./components/Header";
 import About from "./components/About";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

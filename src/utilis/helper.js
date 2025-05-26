@@ -1,6 +1,9 @@
 import slider1 from '../assets/slider1.jpg'
 import slider2 from '../assets/slider2.png'
 import slider3 from '../assets/slider3.jpg'
+import article1 from "../assets/article1.jpg"
+import article2 from "../assets/article2.jpg"
+import article3 from "../assets/article3.jpg"
 
 export  const sliders = [
     {
@@ -58,3 +61,52 @@ export  const sliders = [
     },
    
   ];
+export const articles= [
+  {  id:1,
+    author: "Dr. Ahmet Yılmaz",
+    date: "08",
+    month: "Mart",
+    year: "2025",
+    title:"Yks Hangi Konudan Kaç Soru Geliyor? 2025 Hazırlık Rehberi",
+    image:article1,
+    desc:[
+      {b:"Yks'de hangi konudan kaç soru geliyor sorusu, sınav hazırlığı yapan öğrenciler için oldukça önemlidir. 2025 Yks hazırlık rehberimizde, Yks'de hangi konulardan kaç soru geleceğini detaylı bir şekilde inceleyeceğiz."},
+      {p:"Yks, Türkiye'de üniversiteye giriş sınavıdır ve her yıl milyonlarca öğrenci tarafından alınır. Sınav, Temel Yeterlilik Testi (TYT) ve Alan Yeterlilik Testi (AYT) olmak üzere iki aşamadan oluşur. TYT, genel yetenek ve genel kültür konularını kapsarken, AYT ise öğrencinin seçtiği alanla ilgili konuları içerir."},
+      {p:"Yks'de hangi konudan kaç soru geldiğini bilmek, öğrencilerin sınav hazırlıklarını daha etkili bir şekilde planlamalarına yardımcı olur. Bu nedenle, Yks konularını ve soru dağılımını iyi bilmek önemlidir."},
+    ]
+    },
+    { id:2,
+      author: "Dr. Ahmet Yılmaz",
+      date: "08",
+      month: "Mart",
+      year: "2025",
+      title:"2025 Ykss Sınav Tarihleri ve Detayları",
+      image:article2,
+      desc:[
+        {b:"2025 Ykss sınav tarihleri ve detayları, üniversiteye giriş sürecinde önemli bir yer tutar. Bu makalede, 2025 Ykss sınav tarihlerini, başvuru süreçlerini ve sınavın nasıl gerçekleştirileceğini inceleyeceğiz."},
+        {p:"Ykss, Türkiye'de üniversiteye giriş için yapılan önemli bir sınavdır. Her yıl milyonlarca öğrenci bu sınava katılır ve başarılı olmak için yoğun bir şekilde hazırlanır. 2025 Ykss sınav tarihleri, öğrencilerin hazırlık süreçlerini planlamaları açısından kritik öneme sahiptir."},
+        {p:"Ykss'nin iki aşaması vardır: Temel Yeterlilik Testi (TYT) ve Alan Yeterlilik Testi (AYT). TYT, genel yetenek ve genel kültür konularını kapsarken, AYT ise öğrencinin seçtiği alanla ilgili konuları içerir."}
+      ]
+      },
+      {  id:3,
+        author: "Fatma Demir",
+        date: "08",
+        month: "Mart",
+        year: "2025",
+        title:"Sınav Kaygısından Nasıl Kurtulunur? 2025 Yks İçin İpuçları",
+        image:article3,
+        detail:[
+         {b:"Sınav kaygısı, birçok öğrencinin karşılaştığı yaygın bir sorundur. 2025 Yks için sınav kaygısından nasıl kurtulunacağına dair ipuçlarını bu makalede bulabilirsiniz."},
+         {p:"Sınav kaygısı, öğrencilerin sınav performansını olumsuz etkileyebilir. Bu nedenle, sınav kaygısını yönetmek ve azaltmak önemlidir. 2025 Yks için sınav kaygısından nasıl kurtulunacağına dair bazı ipuçları şunlardır:"},
+         {li:"Düzenli ve etkili bir çalışma programı oluşturun."},
+         {li:"Sınav öncesi yeterli dinlenme ve uyku alın."},
+         {li:"Sınav günü için hazırlığınızı önceden yapın."},
+         {li:"Sınav kaygısını azaltmak için nefes egzersizleri yapın."},
+         {li:"Olumlu düşünmeye odaklanın ve kendinize güvenin."},
+         {li:"Sınavdan önceki günlerde aşırı kafein ve şeker tüketiminden kaçının."},
+         {li:"Sınav günü stres yönetimi tekniklerini uygulayın."},
+         {li:"Sınav sonrası kendinizi ödüllendirin ve başarılarınızı kutlayın."}
+        ]
+        },
+
+]
