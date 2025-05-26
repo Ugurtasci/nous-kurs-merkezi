@@ -110,3 +110,27 @@ export const articles= [
         },
 
 ]
+
+export const comments = [
+  {
+    id: 1,
+    name: "Ahmet Yılmaz",
+    type:"Öğrenci",
+    date: "08 Mart 2025",
+    comment: "Yks hazırlık sürecim için çok faydalı bilgiler buldum. Teşekkürler!",
+  },
+  {
+    id: 2,
+    name: "Fatma Demir",
+    type:"Öğrenci",
+    date: "09 Mart 2025",
+    comment: "Sınav kaygısı ile başa çıkmak için harika ipuçları. Çok yardımcı oldu.",
+  },
+  {
+    id: 3,
+    name: "Mehmet Çalışkan",
+    type:"Veli",
+    date: "10 Mart 2025",
+    comment: "Yks konularını ve soru dağılımını öğrenmek, çalışma planımı daha iyi yapmamı sağladı.",
+  },
+]

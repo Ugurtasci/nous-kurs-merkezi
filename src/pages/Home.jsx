@@ -8,6 +8,7 @@ import Courses from "../components/Courses";
 import Footer from "../components/Footer";
 import EducationSystem from "../components/EducationSystem";
 import Articles from "../components/Articles";
+import Comments from "../components/Comments";
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
      <Courses/>
      <EducationSystem/>
      <Articles/>
+     <Comments/>
      <Footer/>
     
     </main>
