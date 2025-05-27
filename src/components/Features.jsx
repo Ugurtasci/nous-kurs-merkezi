@@ -7,20 +7,20 @@ const features = [
     icon: <FaUserAlt size={40} className="text-primary text-[#fab303]" />,
     title: 'Sınırsız Bire Bir Destek',
     description:
-      'Nouse Vip öğrencileri eksiklerine yönelik sınırsız bire bir destek alır, zamanında tüm eksiklerini giderir.',
+      'Nous Vip öğrencileri eksiklerine yönelik sınırsız bire bir destek alır, zamanında tüm eksiklerini giderir.',
   },
   { id:2,
     icon: <FaBookOpen size={40} className="text-primary text-white" />,
     title: 'Tam Verimli Ders Anlatımı',
     description:
-      'Nouse Vip’de 5-8 kişilik seviye sınıflarında bire bir ders kalitesinde, interaktif gerçekleşen derslerle tüm konular en iyi şekilde öğrenilir.',
+      'Nous Vip’de 5-8 kişilik seviye sınıflarında bire bir ders kalitesinde, interaktif gerçekleşen derslerle tüm konular en iyi şekilde öğrenilir.',
   },
   {
     id:3,
     icon: <FaGlasses size={40} className="text-primary text-[#fab303]" />,
     title: 'Sıkı Bireysel Takip ve Analiz',
     description:
-      'Nouse Vip bünyesinde her öğrencinin gelişimi adım adım takip edilir. Öğrenciler kişiye özel ve seviyesine uygun ödevlendirme ve koçluk ile YKS sınavına hazırlanırlar.',
+      'Nous Vip bünyesinde her öğrencinin gelişimi adım adım takip edilir. Öğrenciler kişiye özel ve seviyesine uygun ödevlendirme ve koçluk ile YKS sınavına hazırlanırlar.',
   },
 ];
 

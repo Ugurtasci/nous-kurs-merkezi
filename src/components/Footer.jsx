@@ -11,12 +11,12 @@ const Footer = () => {
         <div className="flex flex-col items-center  sm:items-start text-center sm:text-left">
           <img src={logo} alt="logo" className='' />
           <div className="text-3xl font-bold mb-2">444 7 923</div>
-          <a href="mailto:nouse@gmail.com" className="text-gray-300 hover:underline">nouse@gmail.com</a>
+          <a href="mailto:nous@gmail.com" className="text-gray-300 hover:underline">nous@gmail.com</a>
         </div>
 
         {/* Section 2: Kültürde Eğitim */}
         <div className="text-center sm:text-left">
-          <h3 className="font-bold text-lg mb-3">Nouse'da Eğitim</h3>
+          <h3 className="font-bold text-lg mb-3">Nous'da Eğitim</h3>
           <ul className="space-y-2 text-black">
             <li><a href="#" className="hover:underline">Yayınlar</a></li>
             <li><a href="#" className="hover:underline">Danışmanlık Sistemi</a></li>
@@ -30,7 +30,7 @@ const Footer = () => {
           <h3 className="font-bold text-lg mb-3">Bağlantılar</h3>
           <ul className="space-y-2 text-black">
             <li><a href="#" className="hover:underline">Hakkımızda</a></li>
-            <li><a href="#" className="hover:underline">Nouse'da Eğitim</a></li>
+            <li><a href="#" className="hover:underline">Nous'da Eğitim</a></li>
             <li><a href="#" className="hover:underline">İletişim</a></li>
           </ul>
         </div>

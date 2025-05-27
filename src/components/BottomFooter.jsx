@@ -8,7 +8,7 @@ const BottomFooter = () => {
     <footer className='flex flex-col md:flex-row items-center justify-between bg-black text-white p-4 mt-8'>
       <div className='flex items-center md:w-[50%] w-full justify-between'>
         <div className='text-sm '>
-          &copy; {new Date().getFullYear()} Nouse Vip Kurs Merkezi. Tüm Hakları Saklıdır
+          &copy; {new Date().getFullYear()} Nous Vip Kurs Merkezi. Tüm Hakları Saklıdır
         </div>
         <div className=' md:space-x-4 space-x-1 flex'>
           <Link to='https://www.instagram.com/bingolnouskurs_/' target="_blank" className=' hover:text-[#fab303] transition-colors'>

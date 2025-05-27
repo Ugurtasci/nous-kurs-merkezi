@@ -24,7 +24,7 @@ export default function Articles() {
     <div className="max-w-7xl mx-auto px-4 my-20">
         <div className="mb-12 pb-3 border-[#fab303] border-b flex flex-col items-center">
          <h2 className="text-3xl font-bold my-5  text-[#fab303] ">Güncel Makalelerimiz</h2>
-            <p className="md:w-3/5 w-full text-center " >Nouse Vip Blogu'nda, eğitim dünyasındaki en yeni gelişmeleri ve öğrencilere değer katacak ipuçlarını bulabilirsiniz. Başarı hikayelerinden eğitim teknolojilerine kadar geniş bir konu yelpazesini keşfedin. Sizi bilgiye ve başarıya taşıyan güncel makalelerle dolu bir dünyaya davet ediyoruz.</p>
+            <p className="md:w-3/5 w-full text-center " >Nous Vip Blogu'nda, eğitim dünyasındaki en yeni gelişmeleri ve öğrencilere değer katacak ipuçlarını bulabilirsiniz. Başarı hikayelerinden eğitim teknolojilerine kadar geniş bir konu yelpazesini keşfedin. Sizi bilgiye ve başarıya taşıyan güncel makalelerle dolu bir dünyaya davet ediyoruz.</p>
         </div>
       <Slider  {...settings}>
         {articles.map((item, index) => (

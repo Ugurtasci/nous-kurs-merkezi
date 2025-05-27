@@ -4,6 +4,9 @@ import hakkimizda from "../assets/hakkimizda.png"
 import { FaPlay } from 'react-icons/fa';
 import aboutKurs from "../assets/aboutKurs.jpg"
 import studentsImage from "../assets/students.jpg"
+import bgGecis from "../assets/bgGecis.png"
+import AnimatedStatSection from "../components/AnimatedStatSection";
+
 
 const About = () => {
   return (
@@ -60,22 +63,26 @@ const About = () => {
         <h2 className="text-4xl font-bold text-gray-800">Nous Vip Kurs Merkezi</h2>
 
         <p className="text-gray-700">
-        Nous Vip Kur Merkezi olarak, öğrencilerimize çağın gereksinimlerine uygun bir şekilde hizmet sunmayı amaçlıyoruz. Özel eğitimde çığır açan online eğitim modelimizle, öğrencilerimizin her an her yerde öğrenme şansına sahip olmalarını sağlıyoruz.
+      Alanında tecrübeli öğretmenler ile Nous Vip Kurs Merkezi olarak yola çıkan kurumumuzda, öğrenci merkezli öğretim programlarımız ve motivasyonu yükselten eğitim ortamımız ile her öğrencinin başarıyı hak ettiğine inanıyoruz. Kurs önerileri içinde ön plana çıkan Nous Vip Kurs öğrencilerini eksiksiz şekilde başarıya ulaştırmayı hedefler.
         </p>
 
         <p className="text-gray-700">
-          Her öğrencinin potansiyelini en üst düzeye çıkarmak ve onları başarıya taşımak için buradayız...
+          Nous Vip Kursumuza gelen öğrencinin hazır bulunuşluk durumu belirlenerek, seviyesine uygun ortalama 8-10 kişilik sınıflarda eğitim öğretim faaliyetlerine başlar. Teknolojinin sunduğu bütün imkanlar ile öğretim etkinliklerine devam eder. Yoğun bir tempo ile çalışması gerektiğinin bilincinde ve kendisine her açıdan destek olan öğretmenler ile iş birliği içindedir.
         </p>
 
         <p>
-          <span className="font-semibold">Vizyonumuz:</span> Öğrencilerimizin akademik başarılarını artırmak ve onları hayallerine ulaştırmak için çaba harcıyoruz. Uzman eğitmen kadromuz ve çeşitli programlarımızla, öğrencilere özelleştirilmiş bir öğrenme deneyimi sağlamak için buradayız.
+           Sınav dönemindeki bir öğrencinin yapması gereken ilk şey hedef belirlemektir. Öğrenci koçluğu sistemimiz ile öğrenci hedefinden haberdar olur. Yeteneklerinin farkına varır ve bu doğrultuda amaç edinir. Öğrenci koçluğu sistemi ilk aşamadan itibaren çalışma sistemi belirleme, çalışma ortamlarını düzenleme, değerlendirme süreçleri, deneme analizleri gibi her alanda öğrenciyi destekler.
         </p>
 
         <p>
-          <span className="font-semibold">Misyonumuz:</span> Nous Vip Kur Merkezi, her öğrenciye saygı gösterir ve onların benzersiz ihtiyaçlarına duyarlı bir şekilde yaklaşır. Nitelikli eğitmenlerimizle birlikte, öğrencilerin güçlü yönlerini keşfetmelerine, zayıf yönlerini geliştirmelerine ve kendilerini en iyi şekilde ifade etmelerine yardımcı oluyoruz.
+           Nous Vip Kurs Merkezi, güncel eğitim programlarına hızla adapte olması ve dijital ortamları öğretim yöntemlerinde etkin şekilde kullanılmasıdır. Online ve yüz yüze eğitim sürecinde kullandığımız öğrenci takip sistemi, çevresel koşulların etkisi ile motivasyonu ve çalışma enerjisi düşen öğrenci hakkında bilgi verir. Öğrenci öğrenme eksiğine uğramayacak şekilde hızlı bir müdahale ile rehber ve branş öğretmenlerinin desteği sayesinde çalışma temposunu tekrar yakalar. Öğrenci ve çalışmaları hakkında net bilgi sağlayan öğrenci takip sistemi, online eğitim sürecinde de etkili bir şekilde kullanılır.
         </p>
       </div>
     </section>
+    <div>
+      <img src={bgGecis} alt="" className="w-full h-36" />
+    </div>
+    <AnimatedStatSection />
      
     </main>
   )

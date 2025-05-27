@@ -97,11 +97,25 @@ const scrollToTop = () => {
               </NavLink>
             )
           )}
+
+          {/*  // giriş 
+        <div className="bg-black py-1 px-4 rounded-md text-center hover:bg-white  font-semibold hover:text-[#fab301] transition duration-300 text-white">
+          <a
+            href="http://nousobs.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            GİRİŞ YAP
+          </a>
+        </div> */}
         </nav>
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
           {isOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
         </button>
+
+       
       </div>
 
       {/* Mobil Menü */}

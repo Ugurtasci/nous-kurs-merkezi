@@ -22,7 +22,7 @@ const EducationSystem = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Sol Bölüm */}
         <div>
-          <h2 className="text-2xl font-bold mb-6 text-gray-800">NEDEN Nouse Vip Kurs Merkezi?</h2>
+          <h2 className="text-2xl font-bold mb-6 text-gray-800">Neden NOUS Vip Kurs Merkezi?</h2>
           <div className="space-y-6">
             <div className="flex items-start">
               <MdCalendarMonth className="text-[#5492b6] text-3xl mr-4 mt-1 flex-shrink-0" />
