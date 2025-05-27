@@ -5,11 +5,11 @@ import bannerClub from "../assets/bannerClub.png"
 import bgGecis from "../assets/bgGecis.png"
 import CountdownTimer from "../components/CountdownTimer";
 import Courses from "../components/Courses";
-import Footer from "../components/Footer";
+
 import EducationSystem from "../components/EducationSystem";
 import Articles from "../components/Articles";
 import Comments from "../components/Comments";
-import BottomFooter from "../components/BottomFooter";
+
 
 
 const Home = () => {
@@ -28,8 +28,7 @@ const Home = () => {
      <EducationSystem/>
      <Articles/>
      <Comments/>
-     <Footer/>
-     <BottomFooter/>
+    
     
     </main>
   );

@@ -6,6 +6,8 @@ import Header from "./components/Header";
 import About from "./components/About";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "./components/Footer";
+import BottomFooter from "./components/BottomFooter";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
          <Route path="/" element={<Home/>} />  
            <Route path="/hakkimizda" element={<About />} />
         </Routes>
+        <Footer/>
+        <BottomFooter/>
       </BrowserRouter>
     </>
   );
