@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import TopHeader from "./components/TopHeader";
 import Header from "./components/Header";
-import About from "./components/About";
+import About from "./pages/About";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./components/Footer";
@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <TopHeader />
         <Header />
-        <Routes>
+        <Routes >
          <Route path="/" element={<Home/>} />  
            <Route path="/hakkimizda" element={<About />} />
         </Routes>

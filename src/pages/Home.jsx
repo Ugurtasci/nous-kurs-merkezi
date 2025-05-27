@@ -15,7 +15,7 @@ import Comments from "../components/Comments";
 const Home = () => {
   const yksDate = '2025-06-22T10:00:00';
   return (
-    <main className="w-full ">
+    <main className="w-full mt-20 ">
       <Slider />
      <Features/>
      <section className="md:m-20" >
