@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./components/Footer";
 import BottomFooter from "./components/BottomFooter";
+import MissionVision from "./pages/MissionVision";
+import History from "./pages/History";
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
         <Routes >
          <Route path="/" element={<Home/>} />  
            <Route path="/hakkimizda" element={<About />} />
+            <Route path="/misyon-vizyon" element={<MissionVision />} />
+            <Route path="/tarihce" element={<History />} />
+
+            
         </Routes>
         <Footer/>
         <BottomFooter/>

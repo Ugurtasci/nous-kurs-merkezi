@@ -11,7 +11,7 @@ const menuItems = [
     submenu: [
       { label: "Hakkımızda", path: "/hakkimizda" },
       { label: "Misyon ve Vizyonumuz", path: "/misyon-vizyon" },
-      { label: "Tarihçe", path: "/tarihce" },
+      { label: "Tarihçemiz", path: "/tarihce" },
     ]
   },
   { label: "Kurslarımız", path: "/kurslar" },
