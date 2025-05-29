@@ -3,6 +3,7 @@ import mission from "../assets/mission.png"
 import misyonKurs from "../assets/misyonKurs.png"
 import AnimatedStatSection from "../components/AnimatedStatSection";
 import bgGecis from "../assets/bgGecis.png"
+import misyonImage from "../assets/misyon.jpg"
 import { Link } from 'react-router-dom'
 
 
@@ -34,11 +35,11 @@ const MissionVision = () => {
         </div>
 
         {/* Alttaki küçük fotoğraf */}
-        {/* <img
-          src={studentsImage}
+         <img
+          src={misyonImage}
           alt="Öğrenciler"
           className="absolute bottom-[-20px] left-4 md:w-64 w-50 object-cover rounded-lg shadow-lg"
-        /> */}
+        /> 
 
       
       </div>
@@ -52,7 +53,7 @@ const MissionVision = () => {
       </h1>
 
       {/* Ön plan metni - daha küçük ve belirgin */}
-      <h2 className="relative text-2xl m-6 font-bold text-[#fab303] z-10">
+      <h2 className="relative text-2xl m-6 font-bold text-[#fab303] z-10 ">
         MİSYONUMUZ ve VİZYONUMUZ
       </h2>
       </div>

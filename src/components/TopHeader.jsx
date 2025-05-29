@@ -53,7 +53,7 @@ function TopHeader() {
             <MdPhone className="text-lg " />
             <a href="+90 555 555 55 55">+90 555 555 55 55</a>
           </div>
-          <div className="flex items-center gap-1 hover:text-[#fab301]">
+          {/* <div className="flex items-center gap-1 hover:text-[#fab301]">
             <MdEmail className="text-lg" />
 
             <a
@@ -63,10 +63,10 @@ function TopHeader() {
             >
               info@nouskursmerkezi.com
             </a>
-          </div>
+          </div> */}
         </div>
         {/* giriş */}
-        <div className="bg-[#fab301] py-1 px-4 rounded-md text-center hover:bg-white  font-semibold hover:text-[#fab301] transition duration-300">
+        {/* <div className="bg-[#fab301] py-1 px-4 rounded-md text-center hover:bg-white  font-semibold hover:text-[#fab301] transition duration-300">
           <a
             href="http://nousobs.com/"
             target="_blank"
@@ -75,7 +75,7 @@ function TopHeader() {
           >
             GİRİŞ YAP
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

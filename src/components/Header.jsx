@@ -17,7 +17,7 @@ const menuItems = [
   { label: "Kurslarımız", path: "/kurslarimiz" },
   { label: "Kadromuz", path: "/kadro" },
   { label: "Duyurular", path: "/duyurular" },
-  { label: "Etkinliklerimiz", path: "/etkinlikler" },
+ /*  { label: "Etkinliklerimiz", path: "/etkinlikler" }, */
   { label: "Blog", path: "/blog" },
   { label: "Galeri", path: "/galeri" },
   { label: "İletişim", path: "/iletisim" },
@@ -55,7 +55,7 @@ useEffect(() => {
           <img src={logo} alt="Logo" className="h-12 w-auto" />
         </div>
 
-        <nav className="hidden md:flex space-x-6 items-center font-medium text-gray-800">
+        <nav className="hidden md:flex space-x-4 items-center font-medium text-gray-800">
           {menuItems.map((item, index) =>
             item.submenu ? (
               <div key={index} className="relative group ">
@@ -85,17 +85,17 @@ useEffect(() => {
             )
           )}
 
-          {/*  // giriş 
-        <div className="bg-black py-1 px-4 rounded-md text-center hover:bg-white  font-semibold hover:text-[#fab301] transition duration-300 text-white">
-          <a
-            href="http://nousobs.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
-            GİRİŞ YAP
-          </a>
-        </div> */}
+            {/* giriş */} 
+         <div className="bg-black py-1 px-2  rounded-md text-center hover:bg-white  font-semibold hover:text-black transition duration-300 text-[#fab301]">
+            <a
+              href="http://nousobs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              GİRİŞ YAP
+            </a>
+          </div>
         </nav>
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">

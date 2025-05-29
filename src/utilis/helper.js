@@ -10,6 +10,8 @@ import course3 from "../assets/course3.jpg"
 import annocement1 from "../assets/annocement1.jpeg"
 import annoucement2 from "../assets/annoucement2.jpeg"
 import annoucement3 from "../assets/annoucement3.jpeg"
+import teacherbay from "../assets/teacherbay.jpg"
+import teacherWoman from "../assets/teacherWoman.jpg"
 
 
 
@@ -143,6 +145,49 @@ export  const sliders = [
         ]
         
     },
+]
+export const teachers = [
+  {
+    name:"Kemal Uçar",
+    image:teacherbay,
+    jop:"Matematik Öğretmeni"
+  },
+  {
+    name:"Ayşe Yıldız",
+    image:teacherWoman,
+    jop:"Türkçe Öğretmeni"
+  },
+  {
+    name:"Emrah Burkay",
+    jop:"Fizik Öğretmeni",
+    image:teacherbay
+  },
+  {
+    name:"Zeynep Arslan",
+    image:teacherWoman,
+    jop:"Kimya Öğretmeni"
+  },
+  {
+    name:"Kemal Uçar",
+    image:teacherbay,
+    jop:"Biyoloji Öğretmeni"
+  },
+  {
+    name:"Ayşe Yıldız",
+    image:teacherWoman,
+    jop:"Tarih Öğretmeni"
+  },
+  {
+    name:"Emrah Burkay",
+    jop:"Coğrafya Öğretmeni",
+    image:teacherbay
+  },
+  {
+    name:"Zeynep Arslan",
+    image:teacherWoman,
+    jop:"Geometri Öğretmeni"
+  },
+
 ]
 export const articles= [
   {  id:1,

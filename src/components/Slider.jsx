@@ -97,14 +97,14 @@ export default function Slider() {
 function MenuButton({ icon, text, href }) {
   if (text === "İLETİŞİM") {
     return (
-      <a href="tel:+905555555" className="bg-[#fab303] hover:bg-[#3c3523]
+      <a href="tel:+905555555" className="bg-[#3c3523] hover:bg-[#fab303]
        text-white px-4 py-3 flex items-center gap-2 w-48 text-sm font-medium rounded-l-full shadow-md transition-all duration-300">
         {icon} {text}
       </a>
     );
   }
   return (
-    <Link to={href} className="bg-[#fab303] hover:bg-[#3c3523] cursor-pointer text-white px-4 py-3 flex items-center gap-2 w-48 text-sm font-medium rounded-l-full shadow-md transition-all duration-300">
+    <Link to={href} className="bg-[#3c3523] hover:bg-[#fab303] cursor-pointer text-white px-4 py-3 flex items-center gap-2 w-48 text-sm font-medium rounded-l-full shadow-md transition-all duration-300">
       {icon} {text}
     </Link>
   );

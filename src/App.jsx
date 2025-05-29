@@ -13,11 +13,10 @@ import History from "./pages/History";
 import WhatsApp from "./components/WhatsApp";
 import GoUpButton from "./components/GoUpButton";
 import SliderDetail from "./pages/SliderDetail";
-
+import OurTeam from "./pages/OurTeam";
 import OurCourses from "./pages/OurCourses";
 import CourseDetail from "./pages/CourseDatail";
 import Announcements from "./pages/Announcements";
-
 
 function App() {
   return (
@@ -25,22 +24,21 @@ function App() {
       <BrowserRouter>
         <TopHeader />
         <Header />
-        <Routes >
-         <Route path="/" element={<Home/>} />  
-           <Route path="/hakkimizda" element={<About />} />
-            <Route path="/misyon-vizyon" element={<MissionVision />} />
-            <Route path="/tarihce" element={<History />} />
-            <Route path="/haberler/:id" element={<SliderDetail />} />
-            <Route path="/kurslarimiz" element={<OurCourses />} />
-            <Route path="/duyurular" element={<Announcements />} />
-            <Route path="/kursDetay/:id" element={<CourseDetail />} />
-
-            
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/hakkimizda" element={<About />} />
+          <Route path="/misyon-vizyon" element={<MissionVision />} />
+          <Route path="/tarihce" element={<History />} />
+          <Route path="/haberler/:id" element={<SliderDetail />} />
+          <Route path="/kurslarimiz" element={<OurCourses />} />
+          <Route path="/kadro" element={<OurTeam />} />
+          <Route path="/duyurular" element={<Announcements />} />
+          <Route path="/kursDetay/:id" element={<CourseDetail />} />
         </Routes>
-        <WhatsApp/>
-        <GoUpButton/>
-        <Footer/>
-        <BottomFooter/>
+        <WhatsApp />
+        <GoUpButton />
+        <Footer />
+        <BottomFooter />
       </BrowserRouter>
     </>
   );

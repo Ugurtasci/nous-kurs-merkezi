@@ -3,6 +3,7 @@ import history from "../assets/history.png"
 import tarihcemiz from "../assets/tarihcemiz.jpg"
 import AnimatedStatSection from "../components/AnimatedStatSection";
 import bgGecis from "../assets/bgGecis.png"
+import tarihImage from "../assets/tarih.jpg"
 import { Link } from 'react-router-dom'
 const History = () => {
   return (
@@ -31,11 +32,11 @@ const History = () => {
         </div>
 
         {/* Alttaki küçük fotoğraf */}
-        {/* <img
-          src={studentsImage}
+         <img
+          src={tarihImage}
           alt="Öğrenciler"
           className="absolute bottom-[-20px] left-4 md:w-64 w-50 object-cover rounded-lg shadow-lg"
-        /> */}
+        /> 
 
       
       </div>
@@ -51,7 +52,7 @@ const History = () => {
 
       {/* Ön plan metni - daha küçük ve belirgin */}
       <h2 className="relative text-2xl mt-4 font-bold text-[#fab303] z-10 tracking-[5px]">
-        Tarihçemiz
+        TARİHÇEMİZ
       </h2>
       </div>
         <h2 className="text-4xl font-bold text-gray-800">Nous Vip Kurs Merkezi</h2>

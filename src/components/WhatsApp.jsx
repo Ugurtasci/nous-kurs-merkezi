@@ -16,7 +16,7 @@ const WhatsApp = () => {
   };
 
   return (
-    <div className='whatsApp p-3 md: py-2 md:px-4 bottom-20'
+    <div className='whatsApp p-3 md:py-2 md:px-4 bottom-20'
      onClick={handleWhatsappRedirect} >
         <FaWhatsapp className='text-3xl' />
         <p className='hidden md:inline-block'>WhatsApp</p>
