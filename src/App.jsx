@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import BottomFooter from "./components/BottomFooter";
 import MissionVision from "./pages/MissionVision";
 import History from "./pages/History";
+import WhatsApp from "./components/WhatsApp";
+import GoUpButton from "./components/GoUpButton";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
 
             
         </Routes>
+        <WhatsApp/>
+        <GoUpButton/>
         <Footer/>
         <BottomFooter/>
       </BrowserRouter>
