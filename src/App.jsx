@@ -15,6 +15,7 @@ import GoUpButton from "./components/GoUpButton";
 import SliderDetail from "./pages/SliderDetail";
 
 import OurCourses from "./pages/OurCourses";
+import CourseDetail from "./pages/CourseDatail";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path="/tarihce" element={<History />} />
             <Route path="/haberler/:id" element={<SliderDetail />} />
             <Route path="/kurslarimiz" element={<OurCourses />} />
+            <Route path="/kursDetay/:id" element={<CourseDetail />} />
 
             
         </Routes>

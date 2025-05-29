@@ -4,6 +4,9 @@ import slider3 from '../assets/slider3.jpg'
 import article1 from "../assets/article1.jpg"
 import article2 from "../assets/article2.jpg"
 import article3 from "../assets/article3.jpg"
+import course1 from "../assets/course1.jpg"
+import course2 from "../assets/course2.jpg"
+import course3 from "../assets/course3.jpg"
 
 
 
@@ -66,6 +69,78 @@ export  const sliders = [
     
    
   ];
+
+ export const courses = [
+    {
+        id: 1,
+        date: "08",
+        month: "Mart",
+        year: "2025",
+        title: "Bire Bir İlginin Zirvesindeyiz",
+        desc: "12. Sınıf ve Mezun Kursu koçluk destekli YKS hazırlığı sunar. YKS kursu kapsamında öğrenciler bire bir koçluk ve ödevlendirme seanslarıyla kendi seviyelerine ve yetkinliklerine uygun bir yks hazırlık süreci izlerler.",
+        image: course1,
+        href: "/kursDetay/1",
+        detail: [
+          { p: "YKS süreci öğrenciler için hem akademik hem de psikolojik olarak oldukça zorlu bir dönemdir. Bu süreçte doğru yönlendirme, kişiye özel çalışma planı ve motivasyon takibi büyük önem taşır." },
+          { p: "12. sınıf ve mezun gruplarına yönelik hazırlanan kurs programımız, öğrencilerin bireysel farklılıklarını dikkate alarak özel bir yol haritası sunar. Her öğrenciye özel belirlenen koçluk sistemi ile başarı hedeflerine ulaşmak daha planlı ve sürdürülebilir hâle gelir." },
+          { b: "Programımızda neler var?" },
+          { li: "Her öğrenciye özel bire bir koçluk seansları" },
+          { li: "Haftalık hedef belirleme ve performans değerlendirme toplantıları" },
+          { li: "Düzenli ödevlendirme ve takip sistemi" },
+          { li: "Deneme sınavları sonrası analiz ve bireysel rehberlik" },
+          { li: "Zaman yönetimi, stresle başa çıkma ve motivasyon çalışmaları" },
+          { p: "Koçlarımız, öğrencilerin akademik başarılarını artırmanın yanı sıra moral ve motivasyonlarını da yüksek tutmayı hedefler. Bu sayede öğrenciler sınav sürecinde yalnız olmadıklarını hisseder ve daha güçlü ilerlerler." },
+          { b: "Unutma: Doğru yönlendirme, sistemli takip ve bire bir ilgi başarıyı getirir!" }
+        ]
+        
+    },
+    {
+        id: 2,
+        date: "08",
+        month: "Mart",
+        year: "2025",
+        title: "YKS Maratonuna Erken Başla",
+        desc: "11. Sınıf Kursu ile öğrencilerimiz yazılılara en iyi şekilde hazırlanır, tüm TYT ve AYT deneme sınavlarına katılarak sınav tecrübesi edinme şansı yakalarlar. Ödevlendirme ve koçluk sistemine dahil olarak YKS serüveni için disiplinli çalışma alışkanlığı kazanırlar.",
+        image: course2,
+        href: "/kursDetay/2",
+        detail: [
+          { p: "YKS hazırlık süreci sadece 12. sınıfta değil, 11. sınıftan itibaren disiplinli ve planlı bir şekilde başlatıldığında çok daha verimli sonuçlar doğurur. Erken başlayan öğrenciler, sınav temposuna daha çabuk adapte olur ve fark yaratır." },
+          { p: "11. sınıf kurs programımız, okul yazılılarına destek sağlarken aynı zamanda öğrencileri YKS’ye temelden hazırlamayı hedefler. TYT ve AYT formatında yapılan düzenli deneme sınavları ile öğrenciler sınav psikolojisine erken aşina olur." },
+          { b: "Programın Avantajları:" },
+          { li: "Yazılı sınavlara yönelik konu tekrarları ve soru çözümleri" },
+          { li: "TYT ve AYT deneme sınavları ile sınav pratiği kazanımı" },
+          { li: "Bire bir koçluk görüşmeleri ile hedef belirleme ve süreç yönetimi" },
+          { li: "Düzenli ödevlendirme sistemi ile pekiştirici tekrarlar" },
+          { li: "Akademik gelişim takibi ve motivasyon desteği" },
+          { p: "Koçluk sistemimizle öğrencilerin yalnızca akademik başarıları değil, özgüven ve zaman yönetimi becerileri de gelişir. Böylece YKS yolculuklarına sağlam ve bilinçli bir adım atarlar." },
+          { b: "Erken başlayan kazanır! Şimdiden adım at, sınav gününde öne çık!" }
+        ]
+        
+    },
+    {
+        id: 3,
+        date: "08",
+        month: "Mart",
+        year: "2025",
+        title: "Temellerini Sağlam At",
+        desc: "10. sınıf kursu TYT sınavına yönelik konuların pekiştirilmesini, konuların temellerinin en iyi şekilde oluşturulmasını sağlarken okula destek seanslarıyla yazılılarda öğrencilerin en iyi sonuçları elde edebilmesini hedefler.",
+        image: course3,
+        href: "/kursDetay/3",
+        detail: [
+          { p: "TYT’ye hazırlık süreci erken yaşta başladığında, öğrenciler konulara daha sağlam temellerle hâkim olur. 0. sınıf kurs programımız, öğrencilerin hem okul derslerinde başarı sağlamasını hem de YKS için güçlü bir akademik altyapı oluşturmasını amaçlar." },
+          { p: "Bu program, özellikle matematik ve Türkçe gibi TYT’nin temel derslerine odaklanarak, öğrencilerin kavramsal eksiklerini gidermelerine ve temel becerilerini geliştirmelerine destek olur." },
+          { b: "Program İçeriği:" },
+          { li: "TYT’ye temel oluşturacak konuların sade ve anlaşılır anlatımı" },
+          { li: "Konu sonlarında pekiştirici testler ve birebir soru çözüm seansları" },
+          { li: "Okula destek amaçlı yazılı sınavlara hazırlık çalışmaları" },
+          { li: "Ödevlendirme sistemiyle düzenli takip ve bireysel geri bildirimler" },
+          { li: "Koçluk görüşmeleriyle öğrencilerin motivasyonlarının artırılması" },
+          { p: "0. sınıf programı, öğrencilerin konuları yüzeysel değil, derinlemesine anlamasını sağlar. Böylece sonraki yıllarda karşılaşacakları yoğun sınav temposuna hazır hale gelirler." },
+          { b: "Sağlam bir temel, sağlam bir gelecek demektir. Yola bugünden çıkın, avantajı erkenden yakalayın!" }
+        ]
+        
+    },
+]
 export const articles= [
   {  id:1,
     author: "Dr. Ahmet Yılmaz",
