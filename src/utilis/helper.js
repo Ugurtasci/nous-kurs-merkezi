@@ -7,6 +7,9 @@ import article3 from "../assets/article3.jpg"
 import course1 from "../assets/course1.jpg"
 import course2 from "../assets/course2.jpg"
 import course3 from "../assets/course3.jpg"
+import annocement1 from "../assets/annocement1.jpeg"
+import annoucement2 from "../assets/annoucement2.jpeg"
+import annoucement3 from "../assets/annoucement3.jpeg"
 
 
 
@@ -213,4 +216,28 @@ export const comments = [
     date: "10 Mart 2025",
     comment: "Yks konularını ve soru dağılımını öğrenmek, çalışma planımı daha iyi yapmamı sağladı.",
   },
+]
+
+export const announcements = [
+  {
+    id:1,
+    title:"Yks Sınav Tarihleri Açıklandı",
+    date:"08 Nisan 2025",
+    description:"2025 Yks sınav tarihleri açıklandı. Öğrencilerimizi sınav tarihlerini not almaya davet ediyoruz. Sınavlar 15-16 Haziran 2025 tarihlerinde gerçekleşecektir.",
+    image:annocement1
+  },
+  {
+    id:1,
+    title:"Deneme Sınavı Sonuçları Açıklandı",
+    date:"10 Mayıs 2025",
+    description:"Deneme Sınavı sonuçları açıklandı. Öğrencilerimiz sonuçlarını öğrenci panelinde görüntüleyebilirler. Başarılarının devamını dileriz.",
+    image:annoucement2
+  },
+  {
+    id:3,
+    title:"Yaz Dönemi Kurs Kayıtları Başladı",
+    date:"25 Mayıs 2025",
+    description:"Yaz dönemi kurs kayıtları başlamıştır. Öğrencilerimiz yaz tatilinde de Yks hazırlıklarına devam edebilirler. Kayıt için denışmanlarımızla iletişime geçebilirsiniz.",
+    image:annoucement3
+  }
 ]

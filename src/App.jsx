@@ -16,6 +16,7 @@ import SliderDetail from "./pages/SliderDetail";
 
 import OurCourses from "./pages/OurCourses";
 import CourseDetail from "./pages/CourseDatail";
+import Announcements from "./pages/Announcements";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/tarihce" element={<History />} />
             <Route path="/haberler/:id" element={<SliderDetail />} />
             <Route path="/kurslarimiz" element={<OurCourses />} />
+            <Route path="/duyurular" element={<Announcements />} />
             <Route path="/kursDetay/:id" element={<CourseDetail />} />
 
             
