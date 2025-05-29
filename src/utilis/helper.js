@@ -5,60 +5,65 @@ import article1 from "../assets/article1.jpg"
 import article2 from "../assets/article2.jpg"
 import article3 from "../assets/article3.jpg"
 
+
+
 export  const sliders = [
+  {
+    id: 1,
+    date: "08",
+    month: "Mart",
+    year: "2025",
+    title: "YKS'de Son 100 Metre",
+    image: slider1,
+    subtitle: "Haberin devamı için tıklayınız",
+    detail: [
+      { p: "YKS'ye çok az bir süre kaldı. Bu süreçte motivasyonunuzu yüksek tutmak, zamanı verimli kullanmak ve zihinsel olarak güçlü kalmak büyük önem taşıyor." },
+      { p: "Bu dönemde yeni konu öğrenmekten çok, tekrar yapmak ve bol bol deneme çözmek daha faydalı olacaktır. Eksik olduğunuz konuları belirleyin ve odaklanın." },
+      { li: "Zaman yönetimi yapın, günlük plan hazırlayın." },
+      { li: "Deneme sınavlarında gerçek sınav süresine uyun." },
+      { li: "Uyku düzeninizi bozmayın, sağlıklı beslenin." },
+      { li: "Kendinize zaman ayırın, kısa yürüyüşler veya nefes egzersizleri yapın." },
+      { b: "Unutmayın: Bu son virajda istikrar ve moral en büyük güçleriniz!" }
+    ]
+  },
+  {
+    id: 2,
+    date: "07",
+    month: "Şub",
+    year: "2025",
+    title: "Deneme Kulübü Kayıtları Başladı",
+    image: slider2,
+    subtitle: "Haberin devamı için tıklayınız",
+    detail: [
+      { p: "Gerçek sınav deneyimi kazanmak, zaman yönetimini geliştirmek ve eksiklerinizi tespit etmek için Deneme Kulübü kayıtlarımız başlamıştır!" },
+      { p: "Kulübümüz her hafta farklı branşlarda deneme sınavları yaparak öğrencilerin gelişimini yakından takip eder ve bireysel analiz sunar." },
+      { b: "Deneme Kulübü ile kazandıklarınız:" },
+      { li: "Gerçek sınav ortamına benzer deneyim" },
+      { li: "Düzenli denemelerle gelişim takibi" },
+      { li: "Sınav sonrası detaylı sonuç analizi" },
+      { li: "Zaman yönetimi ve hız kazanımı" },
+      { p: "Kayıtlarımız kontenjanla sınırlıdır. Katılmak isteyen öğrenciler danışman öğretmenleriyle iletişime geçebilirler." },
+      { b: "Unutma: Deneme sınavları, başarıya giden yolda en iyi rehberindir!" }
+    ]
+  },  
     {
-      id:1,
-      date: "08",
-      month: "Mart",
-      year: "2025",
-      title: "Yks'de Son 100 metre",
-      image: slider1,
-      subtitle: "Haberin devamı için tıklayınız",
-      detail:[
-        {p:"Kardiyovasküler Hastalık (kalp damar hastalığı; KVH), kalbinizi ve vücudunuzun kan damar sistemini olumsuz etkileyen hastalıkları kapsar. Yani hastalığın adındaki kardiyo kalp, vasküler de kan damarları ifade etmektedir."},
-        {p:"Kardiyovasküler Hastalıklarının büyük çoğunluğu kronik rahatsızlıkları yansıtır. Bu rahatsızlıklar uzun sürede gelişip kendini belli etmektedir. Fakat kardiyovasküler Hastalıklarının bir bölümü kalbi ya da beyni besleyen bir damarda tıkanıklık meydana geldiğinde ansızın oluşan kalp krizleri ve inmeler gibi akut olaylar şeklinde meydana gelebilir."},
-        {b:"Riskinizi öğrenmek ve erken önlem almak için Aile Hekiminizden randevu alınız."}
-      ]
-     
-    },
-    { id:2,
-      date: "07",
-      month: "Şub",
-      year: "2025",
-      title: "Deneme Klübü Kayıtları Başladı",
-      image: slider2,
-      subtitle: "Haberin devamı için tıklayınız",
-      detail:[
-        {p:"Kanser günümüzün önemli bir halk sağlığı sorunu olup gündemdeki yerini korumaktadır. Sebebi bilinen ölümler sıralamasında kalp ve damar hastalıklarından sonra ikinci sıradaki kanser, öldürücülüğü yanında bıraktığı sakatlıklar ve tedavisindeki yüksek maliyetler nedeniyle iş gücünde ve ülke ekonomisinde çok ağır kayıplara neden olmaktadır."},
-        {p:"Kanser konusunda toplumda farkındalık sağlanması, toplum bilincinin geliştirilmesi ve kanser taramaları, kanserle mücadelede en etkili yöntemlerin başında gelmektedir. Ülkemizde de Dünya Sağlık Örgütünün önerdiği üç kanser türünde tarama yapılmaktadır."},
-        {b:"Taraması yapılan kanserler:"},
-        {b:"Kadınlarda meme kanseri tarama programı kapsamında;"},
-        {p:"* Ayda bir kendi kendine meme muayenesi (KKMM) yapması için danışmanlığın verilmesi"},
-        {p:"* Yılda bir klinik meme muayenesi  "},
-        {p:"* 40-69 yaş arası kadınlara 2 yılda bir mammografi çekimi,"},
-        {b:"Kadınlarda serviks kanseri tarama programı kapsamında;"},
-        {p:"* 30-65 yaş aralığındaki kadınlardan 5 yılda bir smear ve HPV -DNA testi yapılması"},
-        {b:"Kolorektal kanser taramaları;"},
-        {p:"* 50-70 yaş aralığındaki erkek ve kadınlarda 2 yılda bir gaitada gizli kan testi yapılması,"},
-        {p:"* 50-70 yaş arasında 10 yılda bir Kolonoskopi yapılmaktadır."}
-      ]
-    },
-    { id:3,
+      id: 3,
       date: "09",
       month: "Nis",
       year: "2025",
       title: "Erken Kayıt Avantajlarından Yararlanın",
       image: slider3,
       subtitle: "Haberin devamı için tıklayınız",
-      detail:[
-        {b:"Kalbinizi korumak için;"},
-        {li:"Sağlıklı beslenin."},
-        {li:"Fiziksel olarak aktif olun."},
-        {li:"Stresle başa çıkın."},
-        {li:"Aile hekiminizi düzenli olarak ziyaret edin ve sağlık kontrollerinizi yaptırın."},
-        {b:"Kalp hastalıklarına bağlı ölümlerin %80'inin sağlıklı yaşam tarzının benimsenmesiyle önlenebileceğini UNUTMAYIN!"}
+      detail: [
+        { b: "Erken kayıt neden önemlidir?" },
+        { li: "Sınırlı kontenjanlardan öncelikli olarak yararlanabilirsiniz." },
+        { li: "Avantajlı fiyatlarla kayıt olabilirsiniz." },
+        { li: "Program ve materyal seçimini daha erken yapabilirsiniz." },
+        { li: "Planlamanızı daha rahat yapabilirsiniz." },
+        { b: "Unutmayın: Erken kayıt fırsatlarını kaçırmayın!" }
       ]
-    },
+    }
+    
    
   ];
 export const articles= [

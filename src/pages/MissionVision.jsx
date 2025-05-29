@@ -17,7 +17,7 @@ const MissionVision = () => {
       <section className='w-full py-4 shadow-lg border-b border-slate-200  px-5 lg:px-20 bg-[#f8f8f8] flex items-center
        text-sm text-slate-500'>
         <Link to={"/"}>Ana Sayfa </Link>
-        <p> / Missyonumuz ve Vizyonumuz</p>
+        <p> / Misyonumuz ve Vizyonumuz</p>
       </section> 
       <section className="flex flex-col md:flex-row  items-center justify-center gap-10 px-6 md:px-20 lg:px-32 py-12 bg-white">
       {/* Left Section */}
@@ -52,7 +52,7 @@ const MissionVision = () => {
       </h1>
 
       {/* Ön plan metni - daha küçük ve belirgin */}
-      <h2 className="relative text-2xl m-6 font-bold text-blue-700 z-10">
+      <h2 className="relative text-2xl m-6 font-bold text-[#fab303] z-10">
         MİSYONUMUZ ve VİZYONUMUZ
       </h2>
       </div>

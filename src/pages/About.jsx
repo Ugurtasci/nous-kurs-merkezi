@@ -49,14 +49,15 @@ const About = () => {
 
       {/* Right Section */}
       <div className="w-full md:w-1/2 space-y-5">
-      <div className="relative flex items-center justify-center  overflow-hidden">
+      <div className="relative h-12  overflow-hidden">
       {/* Arka plan metni - daha büyük ve opak olmayan */}
-      <h1 className="absolute text-5xl font-bold text-gray-300 opacity-50 z-0 select-none">
+      <h1 className="absolute left-0 text-5xl font-bold text-gray-300 opacity-50 z-0 select-none tracking-[20px]">
         Biz Kimiz?
       </h1>
 
+
       {/* Ön plan metni - daha küçük ve belirgin */}
-      <h2 className="relative text-2xl m-4 font-bold text-blue-700 z-10">
+      <h2 className="relative text-2xl mt-4 font-bold text-[#fab303] z-10 tracking-[5px]">
         BİZ KİMİZ?
       </h2>
       </div>

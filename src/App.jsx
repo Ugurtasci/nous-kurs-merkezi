@@ -12,6 +12,10 @@ import MissionVision from "./pages/MissionVision";
 import History from "./pages/History";
 import WhatsApp from "./components/WhatsApp";
 import GoUpButton from "./components/GoUpButton";
+import SliderDetail from "./pages/SliderDetail";
+
+import OurCourses from "./pages/OurCourses";
+
 
 function App() {
   return (
@@ -24,6 +28,8 @@ function App() {
            <Route path="/hakkimizda" element={<About />} />
             <Route path="/misyon-vizyon" element={<MissionVision />} />
             <Route path="/tarihce" element={<History />} />
+            <Route path="/haberler/:id" element={<SliderDetail />} />
+            <Route path="/kurslarimiz" element={<OurCourses />} />
 
             
         </Routes>

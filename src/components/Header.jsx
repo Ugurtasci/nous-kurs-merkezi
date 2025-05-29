@@ -14,7 +14,7 @@ const menuItems = [
       { label: "Tarihçemiz", path: "/tarihce" },
     ]
   },
-  { label: "Kurslarımız", path: "/kurslar" },
+  { label: "Kurslarımız", path: "/kurslarimiz" },
   { label: "Kadromuz", path: "/kadro" },
   { label: "Duyurular", path: "/duyurular" },
   { label: "Etkinliklerimiz", path: "/etkinlikler" },
