@@ -19,6 +19,7 @@ import CourseDetail from "./pages/CourseDatail";
 import Announcements from "./pages/Announcements";
 import Blogs from "./pages/Blogs";
 import BlogDetail from "./pages/BlogDetail";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/kadro" element={<OurTeam />} />
           <Route path="/duyurular" element={<Announcements />} />
           <Route path="/blog" element={<Blogs />} />
+          <Route path="/iletisim" element={<Contact />} />
           <Route path="/kursDetay/:id" element={<CourseDetail />} />
         </Routes>
         <WhatsApp />
