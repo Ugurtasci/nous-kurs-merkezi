@@ -27,7 +27,7 @@ const Home = () => {
     window.location.href = whatsappUrl;
 };
   return (
-    <main className="w-full mt-20 ">
+    <main className="w-full mt-14 md:mt-20  ">
       <Slider />
      <Features/>
      <section onClick={handleWhatsappRedirect} className="md:m-20" >
@@ -40,7 +40,7 @@ const Home = () => {
      <EducationSystem/>
      <Articles/>
      <Comments/>
-    
+     <img src={bgGecis} alt="" className="w-full h-36" />
     
     </main>
   );

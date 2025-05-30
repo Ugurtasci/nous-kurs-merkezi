@@ -45,7 +45,7 @@ export default function Articles() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800">{item.title}</h3>
-                  <Link to={`/haberler/${item.id}`} className="mt-4 bg-[#fab303] cursor-pointer text-white px-4 py-1.5 rounded-full text-sm hover:bg-black transition">
+                  <Link to={`/blog/${item.id}`} className="mt-4 bg-[#fab303] cursor-pointer text-white px-4 py-1.5 rounded-full text-sm hover:bg-black transition">
                     Devamını Oku →
                   </Link>
                 </div>

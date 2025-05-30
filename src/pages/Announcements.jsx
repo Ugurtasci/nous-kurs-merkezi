@@ -5,7 +5,7 @@ import { announcements } from '../utilis/helper'
 
 const Announcements = () => {
   return (
-    <main className='mt-20'>
+    <main className='mt-14 md:mt-20 '>
          <section className='w-full '>
         <img src={bgDuyurular} alt="logo"
         className='w-full object-fit-contain' />

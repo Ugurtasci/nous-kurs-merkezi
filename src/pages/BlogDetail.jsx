@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import { sliders } from "../utilis/helper";
+import { articles } from "../utilis/helper";
 import { Link, useParams } from 'react-router-dom';
 import bgGecis from "../assets/bgGecis.png"
-const SliderDetail = () => {
+const BlogDetail = () => {
 
     const { id } = useParams();
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const founded = sliders.find(item => item.id === Number(id));
+    const founded = articles.find(item => item.id === Number(id));
     setData(founded);
   }, [id]);
 
   
   return (
     <main className='mt-14 md:mt-20 '>
-        <section className='w-full py-4 shadow-lg border-b border-slate-200 px-5 lg:px-20 bg-[#f8f8f8] flex items-center text-sm text-slate-500'>
-        <Link to={"/"}>Ana Sayfa/Haberler</Link>
+        <section className='w-full py-4 shadow-lg gap-1 border-b border-slate-200 px-5 lg:px-20 bg-[#f8f8f8] flex items-center text-sm text-slate-500'>
+        <Link to={"/"}>Ana Sayfa/</Link>
+        <Link to={"/blog"}>Blog</Link>
         <p> / {data?.title.substring(0,25)}...</p>
       </section>
       <section className='lg:my-20 my-10 flex flex-col gap-5 lg:px-20 md:px-10 px-5'>
@@ -50,9 +51,9 @@ const SliderDetail = () => {
           )}
 
       </section>
-       <img src={bgGecis} alt="" className="w-full h-36" />
+        <img src={bgGecis} alt="" className="w-full h-36" />
     </main>
   )
 }
 
-export default SliderDetail
+export default BlogDetail

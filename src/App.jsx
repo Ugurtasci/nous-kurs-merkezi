@@ -17,6 +17,8 @@ import OurTeam from "./pages/OurTeam";
 import OurCourses from "./pages/OurCourses";
 import CourseDetail from "./pages/CourseDatail";
 import Announcements from "./pages/Announcements";
+import Blogs from "./pages/Blogs";
+import BlogDetail from "./pages/BlogDetail";
 
 function App() {
   return (
@@ -30,9 +32,11 @@ function App() {
           <Route path="/misyon-vizyon" element={<MissionVision />} />
           <Route path="/tarihce" element={<History />} />
           <Route path="/haberler/:id" element={<SliderDetail />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/kurslarimiz" element={<OurCourses />} />
           <Route path="/kadro" element={<OurTeam />} />
           <Route path="/duyurular" element={<Announcements />} />
+          <Route path="/blog" element={<Blogs />} />
           <Route path="/kursDetay/:id" element={<CourseDetail />} />
         </Routes>
         <WhatsApp />

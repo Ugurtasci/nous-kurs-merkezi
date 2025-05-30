@@ -18,7 +18,7 @@ const CourseDetail = () => {
   
   
   return (
-    <main className='mt-20'>
+    <main className='mt-14 md:mt-20 '>
         <section className='w-full py-4 shadow-lg border-b border-slate-200 px-5 lg:px-20 bg-[#f8f8f8] flex items-center text-sm text-slate-500'>
         <Link to={"/"}>Ana Sayfa/Kurslarımız</Link>
         <p> / {data?.title}</p>

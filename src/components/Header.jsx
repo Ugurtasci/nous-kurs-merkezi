@@ -47,10 +47,10 @@ useEffect(() => {
   return (
     <header
     className={`bg-[#fab303]  w-full lg:px-20 px-5 fixed shadow-2xl left-0 z-50 transition-all duration-300 ${
-      scrolled ? "top-0" : "md:top-12 top-0"
+      scrolled ? "top-0" : "md:top-10 top-0"
     }`}
   >
-      <div className="py-4 flex items-center justify-between">
+      <div className="md:py-4 py-1 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <img src={logo} alt="Logo" className="h-12 w-auto" />
         </div>

@@ -9,7 +9,7 @@ import { MdPhone, MdEmail } from "react-icons/md";
 
 function TopHeader() {
   return (
-    <div className="bg-gray-900 text-white text-md hidden md:inline-block md:w-full">
+    <div className="bg-gray-900 text-white text-md hidden px-20 md:inline-block md:w-full">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
         {/* Sosyal Medya */}
         <div className="flex items-center space-x-3">

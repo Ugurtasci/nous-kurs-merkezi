@@ -36,7 +36,7 @@ const OurTeam = () => {
   );
 
   return (
-    <main className="mt-20 min-h-screen ">
+    <main className="mt-14 md:mt-20  min-h-screen ">
       <section className="w-full relative ">
         <img src={kadromuz} alt="logo" className="w-full object-fit-contain" />
       </section>

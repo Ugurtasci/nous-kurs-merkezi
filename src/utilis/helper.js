@@ -197,7 +197,7 @@ export const articles= [
     year: "2025",
     title:"Yks Hangi Konudan Kaç Soru Geliyor? 2025 Hazırlık Rehberi",
     image:article1,
-    desc:[
+    detail:[
       {b:"Yks'de hangi konudan kaç soru geliyor sorusu, sınav hazırlığı yapan öğrenciler için oldukça önemlidir. 2025 Yks hazırlık rehberimizde, Yks'de hangi konulardan kaç soru geleceğini detaylı bir şekilde inceleyeceğiz."},
       {p:"Yks, Türkiye'de üniversiteye giriş sınavıdır ve her yıl milyonlarca öğrenci tarafından alınır. Sınav, Temel Yeterlilik Testi (TYT) ve Alan Yeterlilik Testi (AYT) olmak üzere iki aşamadan oluşur. TYT, genel yetenek ve genel kültür konularını kapsarken, AYT ise öğrencinin seçtiği alanla ilgili konuları içerir."},
       {p:"Yks'de hangi konudan kaç soru geldiğini bilmek, öğrencilerin sınav hazırlıklarını daha etkili bir şekilde planlamalarına yardımcı olur. Bu nedenle, Yks konularını ve soru dağılımını iyi bilmek önemlidir."},
@@ -208,12 +208,12 @@ export const articles= [
       date: "08",
       month: "Mart",
       year: "2025",
-      title:"2025 Ykss Sınav Tarihleri ve Detayları",
+      title:"2025 Yks Sınav Tarihleri ve Detayları",
       image:article2,
-      desc:[
-        {b:"2025 Ykss sınav tarihleri ve detayları, üniversiteye giriş sürecinde önemli bir yer tutar. Bu makalede, 2025 Ykss sınav tarihlerini, başvuru süreçlerini ve sınavın nasıl gerçekleştirileceğini inceleyeceğiz."},
-        {p:"Ykss, Türkiye'de üniversiteye giriş için yapılan önemli bir sınavdır. Her yıl milyonlarca öğrenci bu sınava katılır ve başarılı olmak için yoğun bir şekilde hazırlanır. 2025 Ykss sınav tarihleri, öğrencilerin hazırlık süreçlerini planlamaları açısından kritik öneme sahiptir."},
-        {p:"Ykss'nin iki aşaması vardır: Temel Yeterlilik Testi (TYT) ve Alan Yeterlilik Testi (AYT). TYT, genel yetenek ve genel kültür konularını kapsarken, AYT ise öğrencinin seçtiği alanla ilgili konuları içerir."}
+      detail:[
+        {b:"2025 Yks sınav tarihleri ve detayları, üniversiteye giriş sürecinde önemli bir yer tutar. Bu makalede, 2025 Ykss sınav tarihlerini, başvuru süreçlerini ve sınavın nasıl gerçekleştirileceğini inceleyeceğiz."},
+        {p:"Yks, Türkiye'de üniversiteye giriş için yapılan önemli bir sınavdır. Her yıl milyonlarca öğrenci bu sınava katılır ve başarılı olmak için yoğun bir şekilde hazırlanır. 2025 Ykss sınav tarihleri, öğrencilerin hazırlık süreçlerini planlamaları açısından kritik öneme sahiptir."},
+        {p:"Yks'nin iki aşaması vardır: Temel Yeterlilik Testi (TYT) ve Alan Yeterlilik Testi (AYT). TYT, genel yetenek ve genel kültür konularını kapsarken, AYT ise öğrencinin seçtiği alanla ilgili konuları içerir."}
       ]
       },
       {  id:3,

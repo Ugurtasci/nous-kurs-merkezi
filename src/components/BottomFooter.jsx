@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import logoCodevion from "../assets/logoCodevion.png";
 const BottomFooter = () => {
   return (
-    <footer className="flex flex-col md:flex-row items-center justify-between bg-black text-white p-4 mt-8">
+    <footer className="flex flex-col md:flex-row items-center justify-between bg-black text-white p-2 mt-8">
       <div className="flex items-center md:w-[50%] w-full justify-between">
         <div className="text-sm ">
         Nous Vip Kurs Merkezi &copy; {new Date().getFullYear()} | Tüm Hakları

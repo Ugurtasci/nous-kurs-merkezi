@@ -20,7 +20,7 @@ const GoUpButton = () => {
          {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-14 border-2 border-white  right-6 bg-black text-white w-12 h-12 rounded-full shadow-lg hover:bg-white hover:text-black transition-all z-50"
+          className="fixed bottom-20 md:bottom-12 border-2 border-white  right-6 bg-black text-white w-12 h-12 rounded-full shadow-lg hover:bg-white hover:text-black transition-all z-50"
           aria-label="Yukarı Çık"
         >
           ↑

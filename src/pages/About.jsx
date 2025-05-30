@@ -10,8 +10,8 @@ import AnimatedStatSection from "../components/AnimatedStatSection";
 
 const About = () => {
   return (
-    <main className='mt-20 min-h-screen'>
-      <section className='w-full relative '>
+    <main className='mt-14 md:mt-20  min-h-screen'>
+      <section className='w-full '>
         <img src={hakkimizda} alt="logo"
         className='w-full object-fit-contain' />
       </section> 

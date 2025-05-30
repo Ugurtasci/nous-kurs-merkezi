@@ -7,7 +7,7 @@ import tarihImage from "../assets/tarih.jpg"
 import { Link } from 'react-router-dom'
 const History = () => {
   return (
-     <main className='mt-20 min-h-screen'>
+     <main className='mt-14 md:mt-20  min-h-screen'>
       <section className='w-full relative '>
         <img src={history} alt="logo"
         className='w-full object-fit-contain' />
