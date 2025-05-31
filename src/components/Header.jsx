@@ -15,7 +15,7 @@ const menuItems = [
     ]
   },
   { label: "Kurslarımız", path: "/kurslarimiz" },
-  { label: "Kadromuz", path: "/kadro" },
+ // { label: "Kadromuz", path: "/kadro" },
   { label: "Duyurular", path: "/duyurular" },
  /*  { label: "Etkinliklerimiz", path: "/etkinlikler" }, */
   { label: "Blog", path: "/blog" },
@@ -146,7 +146,19 @@ useEffect(() => {
                 {item.icon && item.icon} {item.label}
               </Link>
             )
+            
           )}
+          {/* giriş */} 
+         <div className="bg-black py-1 w-22 rounded-md text-center hover:bg-white  font-semibold hover:text-black transition duration-300 text-[#fab301]">
+            <a
+              href="http://nousobs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+            >
+              GİRİŞ YAP
+            </a>
+          </div>
         </div>
       )}
 

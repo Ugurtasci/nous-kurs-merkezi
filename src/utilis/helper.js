@@ -54,6 +54,7 @@ export  const sliders = [
       { b: "Unutma: Deneme sınavları, başarıya giden yolda en iyi rehberindir!" }
     ]
   },  
+
     {
       id: 3,
       date: "09",
