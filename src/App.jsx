@@ -20,7 +20,7 @@ import Announcements from "./pages/Announcements";
 import Blogs from "./pages/Blogs";
 import Gallery from "./pages/Gallery";
 import BlogDetail from "./pages/BlogDetail";
-import Contact from "./pages/contact";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
           <Route path="/kadro" element={<OurTeam />} />
           <Route path="/duyurular" element={<Announcements />} />
           <Route path="/blog" element={<Blogs />} />
-          <Route path="/galeri" element={<Gallery />} /> 
+          <Route path="/galeri" element={<Gallery />} />
           <Route path="/iletisim" element={<Contact />} />
           <Route path="/kursDetay/:id" element={<CourseDetail />} />
         </Routes>

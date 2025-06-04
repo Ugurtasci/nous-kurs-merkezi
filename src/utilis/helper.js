@@ -125,9 +125,7 @@ export  const sliders = [
     },
     {
         id: 3,
-        date: "08",
-        month: "Mart",
-        year: "2025",
+       
         title: "Temellerini Sağlam At",
         desc: "10. sınıf kursu TYT sınavına yönelik konuların pekiştirilmesini, konuların temellerinin en iyi şekilde oluşturulmasını sağlarken okula destek seanslarıyla yazılılarda öğrencilerin en iyi sonuçları elde edebilmesini hedefler.",
         image: course3,
@@ -146,6 +144,7 @@ export  const sliders = [
         ]
         
     },
+    
 ]
 export const teachers = [
   {

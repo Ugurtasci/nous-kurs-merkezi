@@ -64,11 +64,11 @@ const MissionVision = () => {
         </p>
 
         <p className="text-gray-700">
-          Öğrenci koçluğu sistemi ve gelişmiş takip mekanizmaları ile öğrencilerimizin akademik, kişisel ve sosyal gelişimlerini yakından izliyor; eksiksiz ve planlı bir şekilde başarıya ulaşmalarını sağlıyoruz. Teknolojinin tüm imkanlarını eğitimle bütünleştirerek çağdaş, yenilikçi ve etkili bir öğrenme deneyimi sunuyoruz.
+          Öğrencilerimizi liselere ve üniversitelere giriş sınavlarına akademik, psikolojik ve stratejik olarak en iyi şekilde hazırlayarak; bireysel potansiyellerini en üst düzeyde kullanmalarını sağlayan, kaliteli, rehberlik odaklı ve etik değerlere bağlı bir eğitim sunmaktır.
         </p>
 
         <span className='text-md font-bold text-gray-800'>Vizyonumuz:</span><p>
-           Öğrenci başarısını yalnızca sınav puanları ile değil, hedef belirleme, özgüven kazanımı ve öğrenme sorumluluğu bilinciyle değerlendiren, bireye özel yaklaşımlarla eğitimde fark yaratan lider bir kurs merkezi olmak. Hem yüz yüze hem de online eğitim süreçlerinde etkin, dinamik ve sürdürülebilir öğretim yöntemleri ile Türkiye’nin en güvenilir ve tercih edilen kurs merkezlerinden biri haline gelmeyi hedefliyoruz.
+           Liselere ve üniversitelere hazırlık alanında öğrenci başarısını sürdürülebilir şekilde artıran, rehberlik temelli yaklaşımıyla fark yaratan ve Türkiye genelinde referans gösterilen öncü bir eğitim kurumu olmaktır.
         </p>
 
         

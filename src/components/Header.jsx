@@ -52,7 +52,7 @@ useEffect(() => {
   >
       <div className="md:py-4 py-1 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <img src={logo} alt="Logo" className="h-12 w-auto" />
+          <img src={logo}  alt="Logo"  className="h-12 w-auto" />
         </div>
 
         <nav className="hidden md:flex space-x-4 items-center font-medium text-gray-800">

@@ -1,23 +1,31 @@
 import { useState, useEffect, useRef } from "react";
 import galeri from "../assets/galeri.png";
+import video1 from "../assets/Gallery/video1.mp4";
 import img1 from "../assets/Gallery/img1.jpg";
 import img2 from "../assets/Gallery/img2.jpg";
-//import videoThumb from "../assets/Gallery/video-thumb.png";
-
-import video1 from "../assets/Gallery/video1.mp4";
 import img3 from "../assets/Gallery/img3.jpg";
 import img4 from "../assets/Gallery/img4.jpg";
 import img5 from "../assets/Gallery/img5.jpg";
-
+import img6 from "../assets/Gallery/img6.jpg";
+import img7 from "../assets/Gallery/img7.jpg";
+import img8 from "../assets/Gallery/img8.jpg";
+import img9 from "../assets/Gallery/img9.jpg";
+import img10 from "../assets/Gallery/img10.jpg";
+import img11 from "../assets/Gallery/img11.jpg";
+import img12 from "../assets/Gallery/img12.jpg";
 import { Link } from "react-router-dom";
 import bgGecis from "../assets/bgGecis.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const media = [
+   {
+    type: "video",
+    src: video1,
+  },
   {
     type: "image",
     src: img1,
-    orientation: "horizontal", // "vertical" da olabilir
+    orientation: "vertical", // "horizontal" da olabilir
   },
   {
     type: "image",
@@ -34,13 +42,45 @@ const media = [
     src: img4,
     orientation: "vertical",
   },
-  {
-    type: "video",
-    src: video1,
-  },
+ 
   {
     type: "image",
     src: img5,
+    orientation: "vertical",
+  },
+  {
+    type: "image",
+    src: img6,
+    orientation: "vertical",
+  },
+  {
+    type: "image",
+    src: img7,
+    orientation: "vertical",
+  },
+  {
+    type: "image",
+    src: img8,
+    orientation: "vertical",
+  },
+  {
+    type: "image",
+    src: img9,
+    orientation: "vertical",
+  },
+  {
+    type: "image",
+    src: img10,
+    orientation: "vertical",
+  },
+  {
+    type: "image",
+    src: img11,
+    orientation: "vertical",
+  },
+  {
+    type: "image",
+    src: img12,
     orientation: "vertical",
   },
 ];

@@ -23,7 +23,7 @@ export default function Slider() {
 
   // useEffect ile otomatik geçiş
   useEffect(() => {
-    const intervalId = setInterval(nextSlide, 3000); // 3 saniye (2000ms) arayla slayt değişir.
+    const intervalId = setInterval(nextSlide, 4000); // n4 saniye (2000ms) arayla slayt değişir.
 
     // Temizleme fonksiyonu
     return () => clearInterval(intervalId);
@@ -97,7 +97,7 @@ export default function Slider() {
 function MenuButton({ icon, text, href }) {
   if (text === "İLETİŞİM") {
     return (
-      <a href="tel:+905555555" className="bg-[#3c3523] hover:bg-[#fab303]
+      <a href="tel:+905432237900" className="bg-[#3c3523] hover:bg-[#fab303]
        text-white px-4 py-3 flex items-center gap-2 w-48 text-sm font-medium rounded-l-full shadow-md transition-all duration-300">
         {icon} {text}
       </a>

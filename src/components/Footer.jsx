@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Section 1: Logo and Contact Info */}
         <div className="flex flex-col items-center  sm:items-start text-center sm:text-left">
           <img src={logo} alt="logo" className='' />
-          <div className="text-3xl font-bold mb-2">444 7 923</div>
+          <div className="text-3xl font-bold mb-2">0543 223 79 00</div>
           <a href="mailto:nous@gmail.com" className="text-gray-300 hover:underline">nous@gmail.com</a>
         </div>
 

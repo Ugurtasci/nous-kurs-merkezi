@@ -17,7 +17,7 @@ const Home = () => {
 
   const handleWhatsappRedirect = () => {
     // Whatsapp numarası ve mesaj
-    const phoneNumber = '905555555555'; // Örnek bir numara
+    const phoneNumber = '+90 543 223 7900'; // Örnek bir numara
     const message = 'Merhaba, bilgi almak istiyorum.';
 
     // Whatsapp uygulamasına yönlendirme URL'i

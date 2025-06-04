@@ -38,7 +38,7 @@ function TopHeader() {
             <FaInstagram />
           </a>
           <a
-            href="https://wa.me/905555555555"
+            href="https://wa.me/90432237900"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-green-500"
@@ -51,7 +51,7 @@ function TopHeader() {
         <div className="flex items-center space-x-4">
           <div className="flex items-center gap-1 cursor-pointer hover:text-[#fab301]">
             <MdPhone className="text-lg " />
-            <a href="+90 555 555 55 55">+90 555 555 55 55</a>
+            <a href="+90 543 223 7900">+90 543 223 7900</a>
           </div>
           {/* <div className="flex items-center gap-1 hover:text-[#fab301]">
             <MdEmail className="text-lg" />
