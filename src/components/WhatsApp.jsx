@@ -19,7 +19,7 @@ const WhatsApp = () => {
 
   return (
     <div
-      className="whatsApp p-3 md:py-4 md:px-4 bottom-20"
+      className="whatsApp ml-8 p-3 md:py-4 md:px-4 bottom-20"
       onClick={handleWhatsappRedirect}
     >
       <FaWhatsapp className="text-3xl rounde-full" />

@@ -3,9 +3,9 @@ import Slider from "../components/Slider";
 import Features from "../components/Features";
 import bannerClub from "../assets/bannerClub.png"
 import bgGecis from "../assets/bgGecis.png"
+import AnimatedStatSection from "../components/AnimatedStatSection";
 import CountdownTimer from "../components/CountdownTimer";
 import Courses from "../components/Courses";
-
 import EducationSystem from "../components/EducationSystem";
 import Articles from "../components/Articles";
 import Comments from "../components/Comments";
@@ -35,7 +35,9 @@ const Home = () => {
      </section>
 
      <CountdownTimer targetDate={yksDate} />
-     <img src={bgGecis} alt="" className="w-full" />
+     <img src={bgGecis} alt="" className="w-full h-36" />
+         <AnimatedStatSection />
+     
      <Courses/>
      <EducationSystem/>
      <Articles/>

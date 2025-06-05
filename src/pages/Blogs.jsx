@@ -5,7 +5,7 @@ import { articles } from "../utilis/helper";
 import bgGecis from "../assets/bgGecis.png";
 const Blogs = () => {
   return (
-    <main className="mt-14 md:mt-20 w-full">
+    <main className="mt-14 md:mt-20 w-full ">
       <section className="w-full ">
         <img src={bgBlog} alt="logo" className="w-full object-fit-contain" />
       </section>

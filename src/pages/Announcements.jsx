@@ -2,10 +2,12 @@ import React from 'react'
 import bgDuyurular from "../assets/bgDuyurular.png"
 import { Link } from 'react-router-dom'
 import { announcements } from '../utilis/helper'
+import bgGecis from "../assets/bgGecis.png"
+
 
 const Announcements = () => {
   return (
-    <main className='mt-14 md:mt-20 '>
+    <main className='mt-14 md:mt-20'>
          <section className='w-full '>
         <img src={bgDuyurular} alt="logo"
         className='w-full object-fit-contain' />
@@ -41,6 +43,10 @@ const Announcements = () => {
 
 
       </section>
+       <div>
+      <img src={bgGecis} alt="" className="w-full h-36" />
+    </div>
+
 
     </main>
   )

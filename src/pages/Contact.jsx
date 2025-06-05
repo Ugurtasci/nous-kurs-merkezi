@@ -1,12 +1,9 @@
-import React, { useRef } from 'react'
-import { Link } from 'react-router-dom'
-import bgGecis from "../assets/bgGecis.png"
-<<<<<<< HEAD
-import contact from "../assets/contact.png"
-=======
+import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
+import bgGecis from "../assets/bgGecis.png";
+import contact from "../assets/contact.png";
 import emailjs from '@emailjs/browser';
-import { PUBLICKEY, SERVICEID, TEMPLATEID } from '../utilis/helper'
->>>>>>> 4c58a41d9b371ef11389e83e84202c13cc3f90fe
+import { PUBLICKEY, SERVICEID, TEMPLATEID } from '../utilis/helper';
 
 const Contact = () => {
 
