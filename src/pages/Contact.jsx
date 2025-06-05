@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import bgGecis from "../assets/bgGecis.png"
+<<<<<<< HEAD
 import contact from "../assets/contact.png"
+=======
+import emailjs from '@emailjs/browser';
+import { PUBLICKEY, SERVICEID, TEMPLATEID } from '../utilis/helper'
+>>>>>>> 4c58a41d9b371ef11389e83e84202c13cc3f90fe
 
 const Contact = () => {
+
+  const form = useRef() 
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICEID, TEMPLATEID,
+    form.current, PUBLICKEY)
+    .then((result) => {
+    console.log(result.text);
+    }, (error) => {
+    console.log(error.text);
+    });
+    };
   return (
     <main className='mt-14 md:mt-20 w-full '>
       <section className="w-full relative ">
@@ -22,10 +40,12 @@ const Contact = () => {
             <h2 className='text-3xl font-bold text-center'>İletişim</h2>
             <p className='text-center text-gray-600'>Bize ulaşmak için aşağıdaki formu doldurabilirsiniz.</p>
             
-            <form className='flex flex-col gap-4'>
-            <input type="text" placeholder="Adınız" className='border border-gray-300 p-2 rounded' required />
-            <input type="phone" placeholder="Telefon Numaranız" className='border border-gray-300 p-2 rounded' required />
-            <textarea placeholder="Mesajınız" className='border border-gray-300 p-2 rounded h-32' required></textarea>
+            <form ref={form}
+              onSubmit={sendEmail} className='flex flex-col gap-4'>
+            <input type="text" name='name' placeholder="Adınız" className='border border-gray-300 p-2 rounded' required />
+            <input name='phone' type="phone" placeholder="Telefon Numaranız" className='border border-gray-300 p-2 rounded' required />
+            <input name='title' type="text" placeholder="Konu" className='border border-gray-300 p-2 rounded' required />
+            <textarea name='message' placeholder="Mesajınız" className='border border-gray-300 p-2 rounded h-32' required></textarea>
             <button type="submit" className='bg-[#fab303] text-white px-4 py-2 rounded hover:bg-black transition'>Gönder</button>
             </form>
         </article>

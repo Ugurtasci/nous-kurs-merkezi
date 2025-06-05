@@ -13,6 +13,9 @@ import annoucement3 from "../assets/annoucement3.jpeg"
 import teacherbay from "../assets/teacherbay.jpg"
 import teacherWoman from "../assets/teacherWoman.jpg"
 
+export const SERVICEID = "service_1i7xb9v";
+export const TEMPLATEID = "template_8ibk5k5";
+export const PUBLICKEY = "GMJOrjoSU7C9c-xH0";
 
 
 export  const sliders = [

@@ -51,9 +51,9 @@ useEffect(() => {
     }`}
   >
       <div className="md:py-4 py-1 flex items-center justify-between">
-        <div className="flex items-center gap-4">
+        <Link to={"/"} className="flex items-center gap-4">
           <img src={logo}  alt="Logo"  className="h-12 w-auto" />
-        </div>
+        </Link>
 
         <nav className="hidden md:flex space-x-4 items-center font-medium text-gray-800">
           {menuItems.map((item, index) =>
